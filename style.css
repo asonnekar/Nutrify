@@ -12,11 +12,15 @@
 }
 
 body{
-    background-color: #0A442D;
+    background-image: linear-gradient(to bottom right, #042c1c, rgb(6, 107, 6));
     color: #F9F6EE	;
     margin:0;
     overflow: hidden;
     height:100%;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+
 }
 
 body h1{
@@ -36,6 +40,7 @@ body h1{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    height:110px
     
     
 }
@@ -44,7 +49,6 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    
     padding: 30px;
     
 
@@ -70,9 +74,12 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #5fe30d;
+    transition: .4s;
 }
 nav ul li a:hover::after{
+    color:#F9F6EE;
     width: 100%;
+    
 }
 
 #main{
@@ -99,7 +106,9 @@ nav ul li a:hover::after{
 
 
 #img{
-    right:0px;
-    position: absolute;
-    top: 11%;
+    position: fixed;
+    top: 11%; /* Adjust based on where you want it vertically */
+    right: 0;
+    width: 30vw; 
+    height: auto; /* Maintain aspect ratio */
 }
